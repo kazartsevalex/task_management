@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  font-family: Arial, Calibri, sans-serif;
+}
+#tasks_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: black;
+  min-height: 100vh;
+}
+.tasksList, #tasks_form_container {
+  width: calc(50% - 15px);
+}
+.tasksList {
+  color: #fff;
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.task {
+  padding: 15px;
+  margin: 0 0 15px;
+  border: 1px solid #222;
+  background-color: #111;
+}
+.priorityHigh {
+  color: red;
+}
+.priorityMedium {
+  color: yellow;
+}
+.priorityLow {
+  color: green;
+}
+.priorityHigh,
+.priorityMedium,
+.priorityLow {
+  font-weight: bold;
+  margin-right: 30px;
+}
+.taskActions {
+  text-align: right;
+}
+.edit, .delete {
+  font-size: 14px;
+  cursor: pointer;
+}
+.edit {
+  margin-right: 15px;
+}
+.edit:hover {
+  color: yellow;
+}
+.delete {
+  margin-left: 15px;
+}
+.delete:hover {
+  color: red;
+}
+#create_task_form  {
+  padding: 15px;
+}
+#create_task_form  input,
+#create_task_form  textarea,
+#create_task_form  select,
+#create_task_form  button {
+  background-color: transparent;
+  border: 2px solid #666;
+  display: block;
+  margin-bottom: 15px;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 18px;
+  transition: all 0.5s;
+}
+#create_task_form  input:focus,
+#create_task_form  textarea:focus,
+#create_task_form  select:focus {
+  border: 2px solid #fff;
+}
+#create_task_form  button {
+  margin-left: auto;
+  width: auto;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+#create_task_form  button:hover {
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #000;
+}
